@@ -1,0 +1,114 @@
+
+:root {
+    --pine: #244f3c;    
+    --clay: #8b6f47;
+    --sand: #f3efe6;
+    --stone: #2f2f2f;
+    --cream: #ffffff;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--sand);
+    margin: 0;
+    padding: 0;
+    color: var(--stone);
+    line-height: 1.65;
+}
+
+header {
+    background-color: var(--pine);
+    padding: 2.5em 1em 1.5em;
+    text-align: center;
+    color: white;
+    border-bottom: 5px solid var(--clay);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.6rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    margin: .3em 0 0;
+    font-size: 1.2rem;
+    color: #e8e8e8;
+    font-style: italic;
+}
+
+nav {
+    margin-top: 1.5em;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f6f6f6;
+    font-weight: 600;
+    padding-bottom: 0.2em;
+    border-bottom: 3px solid transparent;
+    transition: all 0.25s ease-in-out;
+}
+
+nav a:hover {
+    border-bottom: 3px solid var(--clay);
+}
+
+.hero {
+    width: 100%;
+    height: 320px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.25)
+    ),
+    url('images/forestbanner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 5px solid var(--clay);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+
+main {
+    max-width: 1050px;
+    margin: 3em auto;
+    padding: 0 2em;
+}
+
+section {
+    background-color: var(--cream);
+    padding: 2em;
+    margin-bottom: 3em;
+    border-left: 7px solid var(--clay);
+    border-radius: 6px;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+    transition: b
+}
+
+section img {
+    max-width: 380px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5em auto;
+    border-radius: 6px;
+
+    padding: 6px;
+    background-color: #f7f3eb; 
+    border: 1px solid #d8cebf; 
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18); 
+}
