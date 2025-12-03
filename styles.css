@@ -112,3 +112,33 @@ section img {
     border: 1px solid #d8cebf; 
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18); 
 }
+
+.donate-section {
+    text-align: center;
+}
+
+.donate-btn {
+    display: inline-block;
+    background-color: var(--clay);
+    color: white;
+    padding: 0.8em 1.8em;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.donate-btn:hover {
+    background-color: var(--pine);
+}
+.get-involved-bg {
+    background-image: url('images/redwood.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 3em 0;
+}
+
