@@ -38,6 +38,15 @@ h2 {
     color: #e8e8e8;
     font-style: italic;
 }
+.about-title {margin: .3em 0 0;
+    font-size: 2.2rem;
+    color: #000000;
+    font-style: italic;
+    text-align: center; 
+ }
+ .about-body{
+    text-align: center;
+ }
 
 nav {
     margin-top: 1.5em;
