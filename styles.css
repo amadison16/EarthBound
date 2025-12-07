@@ -41,6 +41,12 @@ h2 {
     color: #e8e8e8;
     font-style: italic;
 }
+.about-sub{
+    margin: .3em 0 0;
+    font-size: 1.2rem;
+    color: #000000;
+    font-style: italic;
+}
 
 /* NAV BAR */
 
@@ -110,7 +116,22 @@ section:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 18px rgba(0,0,0,0.18);
 }
-
+section.bio {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 40px;
+  }
+  
+  section.bio img {
+    width: 180px;
+    height: auto;
+  }
+  
+  section.bio .bio-text {
+    max-width: 700px;
+  }
+  
 
 
 /* IMAGES  */
@@ -128,6 +149,12 @@ section img {
     border: 1px solid #d8cebf; 
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18); 
 }
+  .headshot {
+    width: 100px;
+    height: auto;
+    
+  }
+
 
 /*  FOOTER  */
 
