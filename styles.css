@@ -167,44 +167,62 @@ footer {
     margin-top: 3em;
 }
 
-/* Carousel */
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center">
 
-.carousel-img {
-    max-width: 80%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-}
+            <div id="treesCarousel" class="carousel slide mb-5 fade-in" data-bs-ride="carousel" data-bs-interval="3000">
 
-.carousel-item img {
-    max-height: 450px;
-    height: auto;
-    width: auto;
-}
+                <div class="carousel-inner">
 
-/* Carousel Controls */
+                    <div class="carousel-item active">
+                        <img src="images/tree3.jpg" class="carousel-img rounded shadow">
+                    </div>
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: var(--pine);   
-    border-radius: 50%;             
-    width: 40px;
-    height: 40px;
-    background-size: 60%;
-    background-position: center;
-}
+                    <div class="carousel-item">
+                        <img src="images/tree4.jpg" class="carousel-img rounded shadow">
+                    </div>
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    background-color: rgba(0, 0, 0, 0.25); 
-    border-radius: 50%;
-}
+                    <div class="carousel-item">
+                        <img src="images/tree5.jpg" class="carousel-img rounded shadow">
+                    </div>
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 8%;    
-}
+                    <div class="carousel-item">
+                        <img src="images/tree6.jpg" class="carousel-img rounded shadow">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/tree7.jpg" class="carousel-img rounded shadow">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/tree8.jpg" class="carousel-img rounded shadow">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/tree9.jpg" class="carousel-img rounded shadow">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/tree10.jpg" class="carousel-img rounded shadow">
+                    </div>
+
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#treesCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#treesCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+            </div><!-- end carousel -->
+
+        </div>
+    </div>
+</div>
 
 /* icons */
 
