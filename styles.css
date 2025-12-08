@@ -41,6 +41,12 @@ h2 {
     color: #e8e8e8;
     font-style: italic;
 }
+.about-sub{
+    margin: .3em 0 0;
+    font-size: 1.2rem;
+    color: #000000;
+    font-style: italic;
+}
 
 /* NAV BAR */
 
@@ -110,7 +116,22 @@ section:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 18px rgba(0,0,0,0.18);
 }
-
+section.bio {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 40px;
+  }
+  
+  section.bio img {
+    width: 180px;
+    height: auto;
+  }
+  
+  section.bio .bio-text {
+    max-width: 700px;
+  }
+  
 
 
 /* IMAGES  */
@@ -128,6 +149,12 @@ section img {
     border: 1px solid #d8cebf; 
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18); 
 }
+  .headshot {
+    width: 100px;
+    height: auto;
+    
+  }
+
 
 /*  FOOTER  */
 
@@ -199,3 +226,50 @@ footer {
    color: #c49a50;
     transform: scale(1.25);          
 }
+/* Modal Background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.6);
+}
+
+/* Modal Box */
+.modal-content {
+    background: #fff;
+    margin: auto;
+    padding: 2em;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Close Button */
+.close {
+    float: right;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 0.6em;
+    margin: 0.5em 0 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.payment-row {
+    display: flex;
+    gap: 1em;
+}
+
+
