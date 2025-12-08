@@ -169,25 +169,23 @@ footer {
 
 /* Carousel */
 
-.carousel-item {
-    text-align: center;
-}
-
-
-.carousel-item img {
-    width: 100%;         
-    max-width: 700px;    
-    height: auto;         
-    object-fit: cover;   
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto;
-}
-
 #treesCarousel {
-    max-width: 850px;
+    max-width: 650px;      
     margin: 0 auto;
 }
+
+#treesCarousel .carousel-inner {
+    height: 500px;         
+}
+
+#treesCarousel .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;      
+    border-radius: 12px;
+	display: block;
+}
+
 
 /* Carousel Controls */
 
