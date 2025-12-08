@@ -183,13 +183,6 @@ footer {
     width: auto;
 }
 
-.carousel-item {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    float: none !important;     
-}
-
 /* Carousel Controls */
 
 .carousel-control-prev-icon,
