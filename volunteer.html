@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>EarthBound Co. | Get Involved</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <h1>EarthBound Co.</h1>
+    <h2>Sustaining Tomorrow Starts Today</h2>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="volunteer.html" class="active">Get Involved</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ===== MAIN ===== -->
+<main>
+  <div class="get-involved-bg">
+
+    <!-- ===== INTRO ===== -->
+    <section>
+        <h3>Join the Mission</h3>
+        <p>Want to help protect the environment and promote sustainability? There are many ways to get involved!</p>
+    </section>
+
+    <!-- ===== HELP ===== -->
+    <section>
+        <h3>Ways You Can Help</h3>
+        <ul>
+            <li>Volunteer at a tree-planting event</li>
+            <li>Donate supplies for conservation efforts</li>
+            <li>Share our mission on social media</li>
+        </ul>
+    </section>
+
+    <!-- ===== SUPPORT BUTTON ===== -->
+    <section class="donate-section">
+        <h3>Support Our Cause</h3>
+        <p>Your support helps fund tree-planting, education, and conservation projects.</p>
+
+        <a class="donate-btn" href="#" id="openSupport">Pledge Support</a>
+    </section>
+
+    <!-- ===== SIGN UP ===== -->
+    <section>
+        <h3>Sign Up!</h3>
+        <p>Fill out our form to stay updated on upcoming opportunities:</p>
+
+        <form id="joinForm">
+            <label>Name:</label><br>
+            <input type="text" id="joinName" required><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" id="joinEmail" required><br><br>
+
+            <button type="submit">Join Us</button>
+        </form>
+
+        <p id="thankMessage" style="display:none; color: green; margin-top: 1em;">
+            Thank you for joining! We’ll keep you updated.
+        </p>
+    </section>
+
+  </div>
+</main>
+
+<!-- ===== SUPPORT MODAL ===== -->
+<div id="supportModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <h3>Support Form</h3>
+    <p>This is a demo form and collects no sensitive information.</p>
+
+    <form id="supportForm">
+
+        <label>Your Name</label>
+        <input type="text" id="supportName" required>
+
+        <label>Your Email</label>
+        <input type="email" id="supportEmail" placeholder="you@example.com" required>
+
+        <label>How much would you like to pledge?</label>
+        <input type="text" id="supportAmount" placeholder="$20, $50, etc." required>
+
+        <div class="payment-row">
+            <div>
+                <label>Interest Area</label>
+                <input type="text" id="supportInterest" placeholder="Tree planting, cleanups, etc." required>
+            </div>
+            <div>
+                <label>Availability</label>
+                <input type="text" id="supportAvailability" placeholder="e.g., weekends" required>
+            </div>
+        </div>
+
+        <button class="donate-btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- ===== JS ===== -->
+<script>
+// ----- SUPPORT MODAL -----
+const modal = document.getElementById("supportModal");
+const openBtn = document.getElementById("openSupport");
+const closeBtn = document.querySelector(".close");
+
+// open modal
+openBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    modal.style.display = "block";
+    document.body.style.overflow = "hidden";
+});
+
+// close modal
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+};
+
+// click to close
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+};
+
+// ----- SUPPORT FORM VALIDATION -----
+document.getElementById("supportForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("supportName").value.trim();
+    const email = document.getElementById("supportEmail").value.trim();
+    const amount = document.getElementById("supportAmount").value.trim();
+    const interest = document.getElementById("supportInterest").value.trim();
+    const availability = document.getElementById("supportAvailability").value.trim();
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (name.length < 2) { alert("Please enter your name."); return; }
+    if (!emailPattern.test(email)) { alert("Please enter a valid email."); return; }
+    if (amount.length < 1) { alert("Please enter a pledge amount."); return; }
+    if (interest.length < 2) { alert("Please enter an interest area."); return; }
+    if (availability.length < 2) { alert("Please enter your availability."); return; }
+
+    alert("Thank you! Your support has been recorded.");
+
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+});
+
+// ----- JOIN FORM -----
+const joinForm = document.getElementById("joinForm");
+const thankMessage = document.getElementById("thankMessage");
+
+joinForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (joinName.value.trim().length < 2) { alert("Please enter your name."); return; }
+    if (!emailPattern.test(joinEmail.value.trim())) { alert("Please enter a valid email address."); return; }
+
+    joinForm.style.display = "none";
+    thankMessage.style.display = "block";
+});
+</script>
+
+<!-- ==================== FOOTER ==================== -->
+
+<footer class="mt-5 p-4 text-center">
+    <div class="row">
+        <div class="col-md-4">© 2025 EarthBound Co.</div>
+        <div class="col-md-4"><a href="contact.php">Contact Us</a></div>
+        <div class="col-md-4">Troy University</div>
+    </div>
+</footer>
+
+</body>
+</html>

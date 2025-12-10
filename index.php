@@ -199,7 +199,7 @@
 <footer class="mt-5 p-4 text-center">
     <div class="row">
         <div class="col-md-4">© 2025 EarthBound Co.</div>
-        <div class="col-md-4"><a href="contact.html">Contact Us</a></div>
+        <div class="col-md-4"><a href="contact.php">Contact Us</a></div>
         <div class="col-md-4">Troy University</div>
     </div>
 </footer>
